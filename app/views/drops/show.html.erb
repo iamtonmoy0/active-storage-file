@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @drop %>
+ <p>
+    <strong>File:</strong>
+    <%= link_to 'new file ' @drops.file download=''%>
+  </p>
+<div>
+
+  <%= link_to "Edit this drop", edit_drop_path(@drop) %> |
+  <%= link_to "Back to drops", drops_path %>
+
+  <%= button_to "Destroy this drop", @drop, method: :delete %>
+</div>
